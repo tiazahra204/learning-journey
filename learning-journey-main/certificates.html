@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates & Skill - Mutiah Az Zahra</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style kustom untuk animasi progress bar berbasis CSS Variable */
+        .progress-bar-fill {
+            width: 0%;
+            transition: width 0.7s cubic-bezier(0.1, 0.8, 0.3, 1);
+        }
+        .skill-card:hover .progress-bar-fill {
+            width: var(--target-width);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex min-h-screen overflow-x-hidden">
+
+    <!-- SIDEBAR NAVIGATION (MINIMALIS & FOKUS) -->
+    <aside class="fixed inset-y-0 left-0 z-50 w-72 bg-slate-900 text-slate-300 flex flex-col h-screen border-r border-slate-800">
+        <div class="p-6 border-b border-slate-800 text-center">
+            <div class="w-20 h-20 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-blue-500/20 overflow-hidden">
+                <img src="./assets/g1.jpeg" alt="Mutiah Az Zahra" class="w-full h-full object-cover rounded-full">
+            </div>
+            <h2 class="text-white font-semibold text-lg leading-tight">Mutiah Az Zahra</h2>
+            <p class="text-xs text-slate-400 mt-1">Sistem Informasi, Universitas Bakrie</p>
+        </div>
+
+        <nav class="flex-1 p-4 space-y-1.5 mt-4">
+            <a href="index.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+                <span class="text-base">🏠</span> <span class="font-medium">Home</span>
+            </a>
+            <a href="about.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+                <span class="text-base">👤</span> <span>About Me</span>
+            </a>
+            <a href="cv.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+                <span class="text-base">📚</span> <span class="font-medium">Learning Journey</span>
+            </a>
+            <a href="certificates.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-blue-600 text-white font-semibold shadow-md shadow-blue-600/10 transition-all duration-200 text-sm">
+                <span class="text-base">🏆</span> <span class="font-medium">Certificates & Skill</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="flex-1 pl-72 flex flex-col min-h-screen">
+
+        <main class="flex-1 p-8 md:p-12 max-w-6xl w-full mx-auto space-y-12">
+
+            <!-- TOP BAR -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 bg-white border border-slate-200 rounded-xl shadow-sm hover:bg-slate-50 hover:text-blue-600 transition-all duration-200">
+                    <i class="fa-solid fa-arrow-left"></i> Kembali ke Home
+                </a>
+                <span class="text-xs font-semibold text-slate-400 tracking-wider uppercase">Credentials & Capabilities</span>
+            </div>
+
+            <!-- TENTANG SAYA -->
+            <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-8 md:p-10 rounded-3xl shadow-xl shadow-blue-900/10 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                <div class="relative z-10 max-w-4xl space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-200 bg-blue-600/30 px-3 py-1 rounded-full border border-blue-400/20 inline-block">Professional Summary</span>
+                    <h2 class="text-2xl font-bold">Tentang Saya</h2>
+                    <p class="text-blue-50 text-sm md:text-base leading-relaxed text-justify font-light">
+                        Mahasiswa S1 Sistem Informasi Universitas Bakrie yang memiliki minat pada bidang teknologi informasi, komunikasi, dan pengembangan organisasi. Aktif dalam kegiatan Himpunan Mahasiswa Sistem Informasi (HMSI) serta berpengalaman sebagai Master of Ceremony (MC). Memiliki kemampuan komunikasi yang baik, public speaking, kerja sama tim, kepemimpinan, serta mampu beradaptasi dengan lingkungan baru. Berkomitmen untuk terus belajar dan mengembangkan kompetensi akademik maupun profesional.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SERTIFIKASI -->
+            <section class="space-y-5">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Sertifikasi</h3>
+                        <p class="text-slate-500 text-xs">Kredensial yang mendukung kapabilitas teknologi dan manajemen.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- AWS Card -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-blue-500/30 transition-all duration-200 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base leading-tight">AWS Academy Cloud Foundations</h4>
+                                <p class="text-xs text-slate-400 mt-1">Amazon Web Services Academy</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] font-semibold text-blue-600 uppercase tracking-wider">
+                            <span>Sertifikasi Global</span>
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i>
+                        </div>
+                    </div>
+
+                    <!-- Workshop IT Card -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-blue-500/30 transition-all duration-200 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base leading-tight">Sertifikat Seminar dan Workshop Teknologi Informasi</h4>
+                                <p class="text-xs text-slate-400 mt-1">Pengembangan Kompetensi IT</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] font-semibold text-indigo-600 uppercase tracking-wider">
+                            <span>Teknologi & Bisnis</span>
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i>
+                        </div>
+                    </div>
+
+                    <!-- Organisasi Card -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-blue-500/30 transition-all duration-200 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-bold group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base leading-tight">Sertifikat Kepanitiaan dan Organisasi Mahasiswa</h4>
+                                <p class="text-xs text-slate-400 mt-1">Universitas Bakrie / HMSI</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] font-semibold text-purple-600 uppercase tracking-wider">
+                            <span>Kepemimpinan</span>
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOMBOL LIHAT DETAIL SERTIFIKAT -->
+                <div class="flex justify-start pt-2">
+                    <a href="galeri/sertif.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-xl shadow-md shadow-blue-600/10 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/20 hover:-translate-y-0.5 transition-all duration-200 group">
+                        <i class="fa-solid fa-images group-hover:rotate-6 transition-transform"></i> Lihat Lebih Detail Sertifikat
+                    </a>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- TECHNICAL SKILLS -->
+                <div class="lg:col-span-1 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-6">
+                    <div>
+                        <h4 class="text-sm font-bold uppercase text-slate-400 tracking-wider">Capabilities</h4>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5">Technical Skills</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span class="text-slate-700">Microsoft Office (Word, Excel, PPT)</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span class="text-slate-700">Google Workspace</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-[88%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span class="text-slate-700">Analisis Sistem Informasi</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-[75%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span class="text-slate-700">QGIS (Geographic Info System)</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-[60%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOFT SKILLS WITH INTERACTIVE HOVER PROGRESS BARS -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold uppercase text-slate-400 tracking-wider">Interpersonal Attributes</h4>
+                            <h3 class="text-lg font-bold text-slate-900 mt-0.5">Soft Skills</h3>
+                        </div>
+                        
+                        <!-- Grid Soft Skill Beremoticon & Persentase Bergerak -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Public Speaking -->
+                            <div class="skill-card bg-slate-50/60 border border-slate-100 p-4 rounded-xl flex flex-col justify-center hover:bg-white hover:shadow-md hover:shadow-slate-100 hover:border-slate-200 transition-all duration-300 group" style="--target-width: 85%;">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                                        <span class="text-blue-500 text-sm group-hover:scale-110 transition-transform">🎤</span> Public Speaking
+                                    </div>
+                                    <span class="text-[11px] font-bold text-blue-600">85%</span>
+                                </div>
+                                <div class="w-full bg-slate-200/70 h-1.5 rounded-full overflow-hidden">
+                                    <div class="progress-bar-fill bg-gradient-to-r from-blue-500 to-indigo-600 h-full rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Komunikasi -->
+                            <div class="skill-card bg-slate-50/60 border border-slate-100 p-4 rounded-xl flex flex-col justify-center hover:bg-white hover:shadow-md hover:shadow-slate-100 hover:border-slate-200 transition-all duration-300 group" style="--target-width: 90%;">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                                        <span class="text-indigo-500 text-sm group-hover:scale-110 transition-transform">💬</span> Komunikasi
+                                    </div>
+                                    <span class="text-[11px] font-bold text-indigo-600">90%</span>
+                                </div>
+                                <div class="w-full bg-slate-200/70 h-1.5 rounded-full overflow-hidden">
+                                    <div class="progress-bar-fill bg-gradient-to-r from-indigo-500 to-purple-600 h-full rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Teamwork -->
+                            <div class="skill-card bg-slate-50/60 border border-slate-100 p-4 rounded-xl flex flex-col justify-center hover:bg-white hover:shadow-md hover:shadow-slate-100 hover:border-slate-200 transition-all duration-300 group" style="--target-width: 95%;">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                                        <span class="text-purple-500 text-sm group-hover:scale-110 transition-transform">👥</span> Teamwork
+                                    </div>
+                                    <span class="text-[11px] font-bold text-purple-600">95%</span>
+                                </div>
+                                <div class="w-full bg-slate-200/70 h-1.5 rounded-full overflow-hidden">
+                                    <div class="progress-bar-fill bg-gradient-to-r from-purple-500 to-pink-600 h-full rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Leadership -->
+                            <div class="skill-card bg-slate-50/60 border border-slate-100 p-4 rounded-xl flex flex-col justify-center hover:bg-white hover:shadow-md hover:shadow-slate-100 hover:border-slate-200 transition-all duration-300 group" style="--target-width: 80%;">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                                        <span class="text-pink-500 text-sm group-hover:scale-110 transition-transform">👑</span> Leadership
+                                    </div>
+                                    <span class="text-[11px] font-bold text-pink-600">80%</span>
+                                </div>
+                                <div class="w-full bg-slate-200/70 h-1.5 rounded-full overflow-hidden">
+                                    <div class="progress-bar-fill bg-gradient-to-r from-pink-500 to-rose-600 h-full rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TOMBOL LIHAT DETAIL SOFT SKILL -->
+                    <div class="pt-4 border-t border-slate-50 flex justify-start">
+                        <a href="galeri/skills.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-slate-700 bg-slate-100 rounded-xl hover:bg-slate-200/80 hover:-translate-y-0.5 transition-all duration-200 group">
+                            <i class="fa-solid fa-chart-simple group-hover:translate-y-[-1px] transition-transform"></i> Lihat Lebih Detail Soft Skill
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BAHASA -->
+            <section class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Bahasa</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <span class="text-lg">🇮🇩</span>
+                            <div>
+                                <p class="text-sm font-semibold text-slate-800">Bahasa Indonesia</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold">Aktif</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <span class="text-lg">🇬🇧</span>
+                            <div>
+                                <p class="text-sm font-semibold text-slate-800">Bahasa Inggris</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold">Dasar – Menengah</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER (KONTAK RAPI & UPDATE DATA VALID) -->
+        <footer class="bg-slate-900 text-slate-400 text-sm mt-auto border-t border-slate-800">
+            <div class="max-w-6xl mx-auto px-8 py-12 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-2">
+                    <h4 class="text-white font-semibold text-base">&copy; 2026 Mutiah Az Zahra</h4>
+                    <p class="text-slate-400">Information Systems Student</p>
+                    <p class="text-slate-500 text-xs">Universitas Bakrie</p>
+                </div>
+                <div class="flex flex-col md:items-end space-y-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Hubungi Saya</span>
+                    <div class="flex flex-wrap gap-2.5 md:justify-end">
+                        <a href="mailto:mutiahzhra20@gmail.com" class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-blue-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-regular fa-envelope"></i> <span>mutiahzhra20@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/6285810696423" target="_blank" class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-emerald-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-whatsapp"></i> <span>085810696423</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zahra-tia-781929405/" target="_blank" class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-sky-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-linkedin"></i> <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://instagram.com/mutiahzhra_" target="_blank" class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-pink-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-instagram"></i> <span>@mutiahzhra_</span>
+                        </a>
+                        <a href="https://github.com/tiazahra204" target="_blank" class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-github"></i> <span>tiazahra204</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-600">
+                Dibuat dengan dedikasi untuk Bisnis & Teknologi Informasi.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

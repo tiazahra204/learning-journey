@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills Portofolio</title>
+    <style>
+        /* Reset & Base Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Navigasi & Tombol Kembali */
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #2c3e50;
+            color: #ffffff;
+            transform: translateX(-3px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Grid Utama (3 Kolom Sejajar) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Kartu Utama Soft Skill */
+        .skill-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 18px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            /* Transisi animasi saat kursor menjauh atau mendekat */
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                        box-shadow 0.3s ease, 
+                        background-color 0.3s ease;
+        }
+
+        /* Efek Animasi Bergerak pada Kartu Saat Hover (Kursor Mendekat) */
+        .skill-card:hover {
+            transform: translateY(-6px); /* Kartu terangkat ke atas */
+            background-color: #ffffff;   /* Latar belakang menjadi putih bersih */
+            box-shadow: 0 10px 20px rgba(148, 163, 184, 0.15); /* Bayangan halus */
+            border-color: #cbd5e1;
+        }
+
+        /* Baris Judul & Emoji */
+        .skill-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .skill-icon {
+            font-size: 1.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        /* Animasi emoji membesar sedikit saat di-hover */
+        .skill-card:hover .skill-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .skill-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        /* Sektor Persentase & Progress Bar */
+        .progress-container {
+            width: 100%;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Default awal diatur ke 0% */
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71); /* Gradasi Biru ke Hijau */
+            border-radius: 10px;
+            width: 0%; 
+            /* Transisi pergerakan bar saat mengisi */
+            transition: width 0.6s cubic-bezier(0.1, 0.8, 0.3, 1); 
+        }
+
+        /* Saat kartu didekati kursor, isi bar ke target lebar variabel masing-masing */
+        .skill-card:hover .progress-bar-fill {
+            width: var(--target-width);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a href="../index.html" class="btn-back">← Kembali</a>
+    </div>
+
+    <header>
+        <h1>Soft Skills</h1>
+        <p>Kombinasi kemampuan sosial, komunikasi, dan kecerdasan emosional.</p>
+    </header>
+
+    <main class="skills-grid">
+
+        <div class="skill-card" style="--target-width: 85%;">
+            <div class="skill-header">
+                <span class="skill-icon">🎤</span>
+                <span class="skill-title">Public Speaking</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>85%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 90%;">
+            <div class="skill-header">
+                <span class="skill-icon">💬</span>
+                <span class="skill-title">Komunikasi</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>90%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 95%;">
+            <div class="skill-header">
+                <span class="skill-icon">👥</span>
+                <span class="skill-title">Teamwork</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>95%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 80%;">
+            <div class="skill-header">
+                <span class="skill-icon">👑</span>
+                <span class="skill-title">Leadership</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>80%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 88%;">
+            <div class="skill-header">
+                <span class="skill-icon">💡</span>
+                <span class="skill-title">Problem Solving</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>88%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 85%;">
+            <div class="skill-header">
+                <span class="skill-icon">⏰</span>
+                <span class="skill-title">Time Management</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>85%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 75%;">
+            <div class="skill-header">
+                <span class="skill-icon">📅</span>
+                <span class="skill-title">Event Management</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>75%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 92%;">
+            <div class="skill-header">
+                <span class="skill-icon">🔄</span>
+                <span class="skill-title">Adaptability</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>92%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 87%;">
+            <div class="skill-header">
+                <span class="skill-icon">🧠</span>
+                <span class="skill-title">Critical Thinking</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>87%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 83%;">
+            <div class="skill-header">
+                <span class="skill-icon">📊</span>
+                <span class="skill-title">Presentation Skills</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>83%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 90%;">
+            <div class="skill-header">
+                <span class="skill-icon">🤝</span>
+                <span class="skill-title">Interpersonal Skills</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>90%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-card" style="--target-width: 88%;">
+            <div class="skill-header">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-title">Organizational Skills</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info"><span>Tingkat Ahli</span><span>88%</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

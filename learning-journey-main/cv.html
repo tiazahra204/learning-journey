@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journey - Mutiah Az Zahra</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex min-h-screen overflow-x-hidden">
+
+    <!-- SIDEBAR NAVIGATION (MINIMALIS & FOKUS) -->
+    <aside class="fixed inset-y-0 left-0 z-50 w-72 bg-slate-900 text-slate-300 flex flex-col h-screen border-r border-slate-800">
+    <div class="p-6 border-b border-slate-800 text-center">
+        
+        <div class="w-20 h-20 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-blue-500/20 overflow-hidden">
+            
+            <img src="./assets/g1.jpeg" 
+                 alt="Mutiah Az Zahra" 
+                 class="w-full h-full object-cover rounded-full">
+                 
+        </div>
+        
+        <h2 class="text-white font-semibold text-lg leading-tight">Mutiah Az Zahra</h2>
+        <p class="text-xs text-slate-400 mt-1">Sistem Informasi, Universitas Bakrie</p>
+    </div>
+
+    <nav class="flex-1 p-4 space-y-1.5 mt-4">
+        <a href="index.html"
+            class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+            <span class="text-base">🏠</span> <span class="font-medium">Home</span>
+        </a>
+        <a href="about.html"
+       class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+            <span class="text-base">👤</span> <span>About Me</span>
+        </a>
+        <a href="cv.html"
+            class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-blue-600 text-white font-semibold shadow-md shadow-blue-600/10 transition-all duration-200 text-sm">
+            <span class="text-base">📚</span> <span class="font-medium">Learning Journey</span>
+        </a>
+        <a href="certificates.html"
+            class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-200 text-sm">
+            <span class="text-base">🏆</span> <span class="font-medium">Certificates & Skill</span>
+        </a>
+    </nav>
+</aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="flex-1 pl-72 flex flex-col min-h-screen">
+
+        <main class="flex-1 p-8 md:p-12 max-w-5xl w-full mx-auto space-y-10">
+
+            <!-- TOP BAR & NAVIGATION -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <a href="index.html"
+                    class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 bg-white border border-slate-200 rounded-xl shadow-sm hover:bg-slate-50 hover:text-blue-600 transition-all duration-200">
+                    <i class="fa-solid fa-arrow-left"></i> Kembali ke Home
+                </a>
+                <button onclick="window.print()"
+                    class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-slate-900 rounded-xl shadow-sm hover:bg-slate-800 transition-all duration-200">
+                    <i class="fa-solid fa-print"></i> Cetak / Save PDF
+                </button>
+            </div>
+
+            <!-- CURRICULUM VITAE CONTAINER -->
+            <div
+                class="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 md:p-12 space-y-10 relative overflow-hidden">
+
+                <!-- Header Branding -->
+                <div
+                    class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-slate-100 pb-8 relative z-10">
+                    <div>
+                        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">MUTIAH AZ ZAHRA</h1>
+                        <p class="text-blue-600 font-semibold uppercase tracking-wider text-sm mt-1">Sistem Informasi &
+                            Public Speaking Enthusiast</p>
+                    </div>
+                    <div
+                        class="bg-blue-50 border border-blue-100 rounded-2xl p-4 text-xs text-slate-600 space-y-1 max-w-xs w-full">
+                        <div class="flex justify-between"><strong>Status:</strong> <span
+                                class="text-emerald-600 font-medium">Mahasiswa Aktif</span></div>
+                        <div class="flex justify-between"><strong>Lokasi:</strong> <span>Jakarta, Indonesia</span></div>
+                    </div>
+                </div>
+
+                <!-- 2-Column Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+                    <!-- COLUMN LEFT -->
+                    <div class="space-y-8 lg:border-r lg:border-slate-100 lg:pr-8">
+                        <div class="space-y-3">
+                            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400">Data Diri</h3>
+                            <div class="space-y-2.5 text-sm text-slate-600">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500"><i
+                                            class="fa-regular fa-user"></i></span>
+                                    <div>
+                                        <p class="text-[10px] text-slate-400 uppercase">Nama Lengkap</p>
+                                        <p class="font-medium text-slate-800">Mutiah Az Zahra</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500"><i
+                                            class="fa-solid fa-location-dot"></i></span>
+                                    <div>
+                                        <p class="text-[10px] text-slate-400 uppercase">Tempat Tinggal</p>
+                                        <p class="font-medium text-slate-800">Jakarta, Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400">Bidang Minat</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 bg-slate-50 text-slate-700 border border-slate-200 rounded-xl text-xs font-medium flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sistem Informasi
+                                </span>
+                                <span
+                                    class="px-3 py-1.5 bg-slate-50 text-slate-700 border border-slate-200 rounded-xl text-xs font-medium flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Teknologi Informasi
+                                </span>
+                                <span
+                                    class="px-3 py-1.5 bg-slate-50 text-slate-700 border border-slate-200 rounded-xl text-xs font-medium flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> Komunikasi
+                                </span>
+                                <span
+                                    class="px-3 py-1.5 bg-slate-50 text-slate-700 border border-slate-200 rounded-xl text-xs font-medium flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span> Public Speaking
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COLUMN RIGHT -->
+                    <div class="lg:col-span-2 space-y-10">
+                        <!-- PENDIDIKAN -->
+                        <div class="space-y-5">
+                            <h3
+                                class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                                <span class="p-1.5 bg-blue-500 text-white rounded-lg text-xs"><i
+                                        class="fa-solid fa-graduation-cap"></i></span> Pendidikan
+                            </h3>
+                            <div class="relative pl-6 border-l-2 border-slate-200 space-y-2">
+                                <div
+                                    class="absolute -left-[7px] top-1.5 w-3 h-3 bg-blue-600 rounded-full border-2 border-white">
+                                </div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-base">Universitas Bakrie</h4>
+                                        <p class="text-sm text-slate-600 font-medium">S1 Sistem Informasi</p>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-xs font-semibold whitespace-nowrap self-start">2023
+                                        – Sekarang</span>
+                                </div>
+                                <p class="text-xs text-slate-500 leading-relaxed pt-1">
+                                    Fokus pada pengembangan kemampuan di bidang teknologi informasi, analisis sistem,
+                                    dan transformasi digital.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ORGANISASI -->
+                        <div class="space-y-5">
+                            <h3
+                                class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                                <span class="p-1.5 bg-indigo-500 text-white rounded-lg text-xs"><i
+                                        class="fa-solid fa-sitemap"></i></span> Organisasi
+                            </h3>
+                            <div class="relative pl-6 border-l-2 border-slate-200 space-y-2">
+                                <div
+                                    class="absolute -left-[7px] top-1.5 w-3 h-3 bg-indigo-600 rounded-full border-2 border-white">
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-base">Himpunan Mahasiswa Sistem Informasi
+                                    (HMSI)</h4>
+                                <p class="text-xs text-indigo-600 font-semibold uppercase tracking-wider">Anggota Aktif
+                                </p>
+                                <ul class="space-y-1.5 text-xs text-slate-600 pt-2 list-none">
+                                    <li class="flex items-start gap-2"><span class="text-indigo-500">⚡</span>
+                                        Berpartisipasi dalam kegiatan organisasi mahasiswa.</li>
+                                    <li class="flex items-start gap-2"><span class="text-indigo-500">⚡</span> Terlibat
+                                        dalam perencanaan dan pelaksanaan berbagai program kerja.</li>
+                                    <li class="flex items-start gap-2"><span class="text-indigo-500">⚡</span> Bekerja
+                                        sama dalam tim untuk mendukung kegiatan akademik dan non-akademik mahasiswa.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- PENGALAMAN -->
+                        <div class="space-y-5">
+                            <h3
+                                class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                                <span class="p-1.5 bg-purple-500 text-white rounded-lg text-xs"><i
+                                        class="fa-solid fa-briefcase"></i></span> Pengalaman & Peran
+                            </h3>
+                            <div class="relative pl-6 border-l-2 border-slate-200 space-y-2 pb-6">
+                                <div
+                                    class="absolute -left-[7px] top-1.5 w-3 h-3 bg-purple-600 rounded-full border-2 border-white">
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-base">Master of Ceremony (MC)</h4>
+                                <ul class="space-y-1.5 text-xs text-slate-600 pt-1 list-none">
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Menjadi
+                                        pembawa acara pada berbagai kegiatan kampus dan organisasi.</li>
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Mengelola
+                                        jalannya acara agar berjalan lancar dan sesuai agenda.</li>
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Melatih
+                                        kemampuan komunikasi, public speaking, dan manajemen waktu.</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-6 border-l-2 border-slate-200 space-y-2 pb-6">
+                                <div
+                                    class="absolute -left-[7px] top-1.5 w-3 h-3 bg-purple-600 rounded-full border-2 border-white">
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-base">Anggota Kepanitiaan & Organisasi</h4>
+                                <ul class="space-y-1.5 text-xs text-slate-600 pt-1 list-none">
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span>
+                                        Berpartisipasi dalam berbagai kegiatan kepanitiaan dan organisasi mahasiswa.
+                                    </li>
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span>
+                                        Berkolaborasi dengan anggota tim dalam pelaksanaan program kerja.</li>
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Mendukung
+                                        koordinasi dan pelaksanaan kegiatan kampus.</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-6 border-l-2 border-slate-200 space-y-2">
+                                <div
+                                    class="absolute -left-[7px] top-1.5 w-3 h-3 bg-purple-600 rounded-full border-2 border-white">
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-base">Keterlibatan HMSI</h4>
+                                <ul class="space-y-1.5 text-xs text-slate-600 pt-1 list-none">
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Mengikuti
+                                        kegiatan organisasi dan pengembangan mahasiswa.</li>
+                                    <li class="flex items-start gap-2"><span class="text-purple-500">🔹</span> Terlibat
+                                        dalam kegiatan sosial, akademik, dan pengembangan kepemimpinan.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER (KONTAK RAPI & UPDATE DATA VALID) -->
+        <footer class="bg-slate-900 text-slate-400 text-sm mt-auto border-t border-slate-800">
+            <div class="max-w-6xl mx-auto px-8 py-12 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-2">
+                    <h4 class="text-white font-semibold text-base">&copy; 2026 Mutiah Az Zahra</h4>
+                    <p class="text-slate-400">Information Systems Student</p>
+                    <p class="text-slate-500 text-xs">Universitas Bakrie</p>
+                </div>
+                <div class="flex flex-col md:items-end space-y-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Hubungi Saya</span>
+                    <div class="flex flex-wrap gap-2.5 md:justify-end">
+                        <a href="mailto:mutiahzhra20@gmail.com"
+                            class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-blue-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-regular fa-envelope"></i> <span>mutiahzhra20@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/6285810696423" target="_blank"
+                            class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-emerald-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-whatsapp"></i> <span>085810696423</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zahra-tia-781929405/" target="_blank"
+                            class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-sky-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-linkedin"></i> <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://instagram.com/mutiahzhra_" target="_blank"
+                            class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-pink-600 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-instagram"></i> <span>@mutiahzhra_</span>
+                        </a>
+                        <a href="https://github.com/tiazahra204" target="_blank"
+                            class="inline-flex items-center space-x-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 hover:text-white rounded-xl transition-colors text-xs border border-slate-700/50">
+                            <i class="fa-brands fa-github"></i> <span>tiazahra204</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-600">
+                Dibuat dengan dedikasi untuk Bisnis & Teknologi Informasi.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
